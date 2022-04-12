@@ -138,7 +138,7 @@ footer {
   justify-content: flex-end;
   align-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.865);
+  background-color: rgba(0, 0, 0);
 }
 .flex-item-center {
   border: solid 2px #4675AA;
