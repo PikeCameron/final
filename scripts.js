@@ -4,12 +4,14 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-var audio = document.getElementById("myVideo");
+function toggleMute() {
 
-function playAudio() {
-    audio.unmute();
-}
-
-function muteAudio() {
-    audio.mute();
-}
+    var video=document.getElementById("myVideo")
+    
+    if(video.muted){
+        video.muted = false;
+    } else {
+        video.muted = true;
+    }
+    
+    }
