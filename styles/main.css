@@ -109,6 +109,7 @@ footer {
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.2);
+  margin: 0;
 }
 
 .hero-text {
@@ -139,6 +140,7 @@ footer {
   align-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0);
+  margin-bottom: 2rem;
 }
 .flex-item-center {
   border: solid 2px #4675AA;
@@ -161,6 +163,7 @@ footer {
   background-origin: border-box;
   background-clip: content-box, border-box;
   box-shadow: 2px 1000px 1px #fff inset;
+  cursor: pointer;
 }
 
 .play-button:hover {
@@ -227,9 +230,6 @@ footer {
 
 /*end main menu past*/
 
-.hero {
-  margin-bottom: 4rem;
-}
 
 nav {
 
