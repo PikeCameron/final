@@ -165,7 +165,7 @@ footer {
   cursor: pointer;
 }
 
-.play-button:hover {
+.mute:hover {
   box-shadow: none;
   color: white;
   transition: box-shadow 600ms ease, 
