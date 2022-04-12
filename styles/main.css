@@ -143,7 +143,6 @@ footer {
   margin-bottom: 2rem;
 }
 .flex-item-center {
-  border: solid 2px #4675AA;
   order: 0;
   padding-right: 1.5em;
   flex: 0 1 auto;
