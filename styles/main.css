@@ -573,12 +573,12 @@ input[type="radio"]:checked::after {
 }
 
 .big-img {
-  background-image: url(../images/donny.webp);
+  background-image: url('../images/donny.webp');
   min-height: 1050px;
 }
 
 .big-img2 {
-  background-image: url(../images/logo.png);
+  background-image: url('../images/logo.png');
   min-height: 800px;
 }
 
