@@ -327,23 +327,25 @@ nav a[href]:hover {
 /* button */
 
 .button {
-  display: inline-block;
-  background-color: var(--soft-white);
-  color: #000;
-  margin: 2rem 0;
-  padding: 1em 1.5em;
-  border: 1px solid #000;
+  border-radius: 100rem;
+  padding: 1rem;
+  font-size: 1.25rem;
+  padding: .5rem 3rem;
+  color: var(--purple-nurple);
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #78e4ff, #ff48fa);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
   cursor: pointer;
-  user-select: none;
-  border-radius: 8px;
-  text-decoration: none;
 }
 
 .button:hover {
-  background-color: var(--light-blue);
-  color: var(--copper);
-  transition: background-color 600ms ease, 
-    color 1000ms ease;
+  box-shadow: none;
+  color: white;
+  transition: box-shadow 600ms ease, 
+  color 1000ms ease;
 }
 
 /* form */
@@ -561,6 +563,73 @@ input[type="radio"]:checked::after {
   border-radius: 25px;
 }
 
+.big-img, .big-img2 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.big-img {
+  background-image: url(../images/donny.webp);
+  min-height: 1050px;
+}
+
+.big-img2 {
+  background-image: url(../images/logo.png);
+  min-height: 800px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 35px;
+  letter-spacing: 10px;
+}
+
+.caption span.border2 {
+  background-color: transparent;
+  color: var(--text-color);
+  padding: 18px;
+  font-size: 35px;
+  letter-spacing: 10px;
+  font-weight: bold;
+}
+
+h2 {
+  text-align: center;
+}
+
+.interrupt {
+  color: var(--soft-white);
+  background-color: var(--text-color);
+  text-align:center;
+  padding:50px 80px;
+  text-align: justify;
+}
+
+body footer.about-footer {
+  display: block;
+  background-color: var(--purple-nurple);
+  color: #fff;
+  margin: 0;
+  padding: 3rem;
+  font-size: 2rem;
+  line-height: 1.25;
+}
+
 @media (min-width: 601px) {
   .panel {
     flex-direction: row;
@@ -594,6 +663,16 @@ input[type="radio"]:checked::after {
       position: static;
       display: block;
       margin: 2rem 1.5rem 6rem;
+      background-color: transparent;
+
+      transform: none;
+      transition: none;
+    }
+
+    nav.about-nav {
+      position: static;
+      display: block;
+      margin-bottom: 2rem;
       background-color: transparent;
 
       transform: none;
